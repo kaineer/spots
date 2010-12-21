@@ -1,0 +1,10 @@
+task :default => :server
+
+desc "Start server"
+task :server do
+  system "shotgun -p 2666 app/main.rb"
+end
+
+task :production do
+  ruby "app/main.rb -p 2666"
+end

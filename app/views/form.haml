@@ -1,0 +1,31 @@
+%form{ :action => "/spot/update/#{@spot.id rescue ''}", :method => "POST" }
+  %table
+    %tr
+      %td
+        X:
+      %td
+        %input{ :name => 'spot[left]', :value => @spot.left, :id => 'left' }
+    %tr
+      %td
+        Y:
+      %td
+        %input{ :name => 'spot[top]', :value => @spot.top, :id => 'top' }
+    %tr
+      %td
+        W:
+      %td
+        %input{ :name => 'spot[width]', :value => @spot.width, :id => 'width' }
+    %tr
+      %td
+        H:
+      %td
+        %input{ :name => 'spot[height]', :value => @spot.height, :id => 'height' }
+    %tr
+      %td
+        C:
+      %td
+        %input{ :name => 'spot[color]', :value => @spot.color, :id => 'color' }
+    %tr
+      %td
+      %td
+        %input{ :type => "submit", :value => @spot.id ? "Update" : "Save" } 

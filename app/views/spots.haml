@@ -1,0 +1,14 @@
+!!!
+%html
+  %head
+    %link{ :rel => "stylesheet", :type => "text/css", :href => "/stylesheets/app.css" }
+    %script{ :src => "/javascripts/jquery.js", :type => "text/javascript" }
+    %script{ :src => "/javascripts/jquery-ui.min.js", :type => "text/javascript" }
+    %script{ :src => "/javascripts/app.js", :type => "text/javascript" }
+  %body
+    %h2 spots
+    .spots-pad
+      - @spots.each do |spot|
+        = spot.to_html
+    .spot-form
+      = haml :form, :layout => false

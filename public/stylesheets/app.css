@@ -1,0 +1,15 @@
+.spots-pad {
+    width: 800px;
+    height: 600px;
+    border: dotted 1px #000;
+    position: absolute;
+    float: left;
+}
+
+.spot-form {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    border: dotted 1px #000;
+    left: 812px;
+}
